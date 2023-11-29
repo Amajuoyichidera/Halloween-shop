@@ -1,7 +1,6 @@
-// Navbar.js
 import React, { useState } from 'react';
-import styles from './navbar.module.css'; // Import the CSS module
-// ...
+import styles from './navbar.module.css';
+import logo from '../../images/logo-icon.svg'
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -12,7 +11,10 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Logo</div>
+      <div className={styles.logo}>
+        <img src={logo} alt="logo" />
+        <h5>Halloween Shop</h5>
+      </div>
 
       <div className={`${styles.menu} ${isMobile ? styles.mobile : ''}`}>
         <a href="#">Home</a>
