@@ -1,0 +1,25 @@
+.icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.myfree h2 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.myfree p {
+    color: #969898;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.free {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}

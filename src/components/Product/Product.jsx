@@ -1,5 +1,6 @@
 // Product.js
 import React, { useState } from 'react';
+import style from './product.module.css'
 
 const Product = ({ product, onAddToCart }) => {
   const { id, img, name, price } = product;
@@ -11,11 +12,13 @@ const Product = ({ product, onAddToCart }) => {
   };
 
   return (
-    <div key={id} className="product">
-      <img src={img} alt={name} />
+    <div className={style.container}>
+      <div key={id} className={style.product}>
+      <img className={style.img} src={img} alt={name} />
       <h3>{name}</h3>
       <p>${price}</p>
-      <input
+       <div className={style.pick}>
+       <input
         type="number"
         value={quantity}
         onChange={handleQuantityChange}
@@ -24,6 +27,8 @@ const Product = ({ product, onAddToCart }) => {
       <button onClick={() => onAddToCart({ ...product, quantity, img })}>
         Add to Cart
       </button>
+       </div>
+    </div>
     </div>
   );
 };

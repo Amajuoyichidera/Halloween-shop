@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.myP, .myIcon {
+    display: flex;
+    gap: 20px;
+}
+
+.myIcon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.myP a {
+    text-decoration: none;
+    color: white;
+}
+
+.myP a:focus {
+    color: #E35701;
+  }
+
+  .myP p:hover {
+    color: #E35701;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+  }

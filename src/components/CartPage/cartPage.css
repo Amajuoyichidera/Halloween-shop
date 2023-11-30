@@ -1,0 +1,39 @@
+/* Add this to your existing CSS or create a new stylesheet */
+.cartPage {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hide the sidebar */
+    width: 300px;
+    height: 100%;
+    background-color: #181818;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+  }
+  
+  .cartPage.open {
+    right: 0; /* Show the sidebar when open class is present */
+  }
+  
+  .cartSidebar {
+    padding: 20px;
+  }
+  
+  .cartButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #E35701;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .cartButton:active {
+    background-color: #c34b00;
+    transition:  0.3s ease;
+}

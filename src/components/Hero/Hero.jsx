@@ -1,15 +1,17 @@
-import heroBg from '../../images/hero-01.jpg'
 import style from './hero.module.css'
 
 
-const Hero = () => {
+const Hero = ({ item, fontSize }) => {
+  const dynamicStyles = {
+    fontSize: fontSize || '2rem', // Set a default font size if not provided
+  };
   return (
     <div className={style.heroContainer}>
-        <img className={style.hero} src={heroBg} alt="hero background" />
+        <img className={style.hero} src={item.img} alt="hero background" />
         <div className={style.overlay}>
-            <p className={style.new}>NEW COLLECTION</p>
-            <h1>Halloween <br /> Decorations</h1>
-            <p className={style.pTag}>Whether you prefer the charm of classic Halloween decor or the thrill of modern and innovative designs, <br /> these decorations invite you to join in the celebration of all things eerie, enigmatic, and enchanting.</p>
+            <p className={style.new}>{item.p1}</p>
+            <h1 style={dynamicStyles}> {item.h1} <br /> {item.h2} </h1>
+            <p className={style.pTag}>{item.p2} <br /> {item.p3} </p>
             <button className={style.shop}>Shop Now</button>
         </div>
     </div>

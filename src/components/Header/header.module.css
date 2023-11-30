@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;    
+    padding-bottom: 20px;
+}
+
+.header span {
+    color: #E35701;
+    font-weight: bolder;
+}
+
+.header h2 {
+    font-size: 60px;
+}
+
+.line {
+    border-bottom: 1px solid #3D4143;
+    width: 4rem;
+    margin: 0 auto;
+}
