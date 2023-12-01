@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaShuttleVan, FaMapMarkerAlt, FaMapPin } from "react-icons/fa";
+import { FaShuttleVan, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
 import style from './free.module.css'
 

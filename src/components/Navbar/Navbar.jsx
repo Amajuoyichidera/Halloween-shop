@@ -19,8 +19,8 @@ const Navbar = () => {
       <div className={`${styles.menu} ${isMobile ? styles.mobile : ''}`}>
         <a href="#home">Home</a>
         <a href="#product">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="/">About</a>
+        <a href="/">Contact</a>
       </div>
 
       <div className={styles.hamburger} onClick={handleToggle}>

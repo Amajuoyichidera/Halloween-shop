@@ -30,7 +30,7 @@ const Testimonial = () => {
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
-  }, []);
+  }, [testimonialData.length]);
       
   return (
     <div className={style.testimonialSlider}>
