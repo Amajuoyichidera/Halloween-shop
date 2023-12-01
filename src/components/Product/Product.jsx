@@ -1,6 +1,8 @@
 // Product.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './product.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Product = ({ product, onAddToCart }) => {
   const { id, img, name, price } = product;
@@ -11,9 +13,13 @@ const Product = ({ product, onAddToCart }) => {
     setQuantity(newQuantity);
   };
 
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <div className={style.container}>
-      <div key={id} className={style.product}>
+      <div   data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" key={id} className={style.product}>
       <img className={style.img} src={img} alt={name} />
       <h3>{name}</h3>
       <p>${price}</p>

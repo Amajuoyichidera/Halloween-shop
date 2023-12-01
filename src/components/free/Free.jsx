@@ -2,6 +2,9 @@ import React from 'react'
 import { FaShuttleVan, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
 import style from './free.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const MyFree = ({ item }) => {
@@ -16,6 +19,11 @@ const MyFree = ({ item }) => {
 
 
 const Free = () => {
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+      }, []);
+    
 
     const item1 = {
         icon: <FaShuttleVan className={style.icon} />,
@@ -36,7 +44,7 @@ const Free = () => {
     }
 
   return (
-    <div className={style.free}>
+    <div  data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={style.free}>
         <MyFree item={item1} />
         <MyFree item={item2} />
         <MyFree item={item3} />

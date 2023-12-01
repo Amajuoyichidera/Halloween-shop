@@ -2,8 +2,15 @@ import React from 'react'
 import avatar from '../../images/avatar.jpg'
 import { useState, useEffect } from 'react';
 import style from './testimonial.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Testimonial = () => {
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
 
     const testimonialData = [
         {
@@ -35,7 +42,7 @@ const Testimonial = () => {
   return (
     <div className={style.testimonialSlider}>
         <span>TESTIMONIALS</span>
-      <div className="testimonial">
+      <div  data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className="testimonial">
         <h2 dangerouslySetInnerHTML={{ __html: testimonialData[currentTestimonial].text }} />
         <img src={testimonialData[currentTestimonial].image} alt={testimonialData[currentTestimonial].author} />
         <p className="author">- {testimonialData[currentTestimonial].author}</p>
