@@ -23,3 +23,10 @@
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .free {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}

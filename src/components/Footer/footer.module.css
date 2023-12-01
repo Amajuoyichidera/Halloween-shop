@@ -29,3 +29,19 @@ footer {
     transition: ease-in-out 0.3s;
     cursor: pointer;
   }
+
+
+  @media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .myIcon {
+        padding-top: 10px;
+    }
+    
+  }

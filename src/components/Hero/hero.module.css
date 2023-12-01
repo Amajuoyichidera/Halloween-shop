@@ -63,3 +63,35 @@
     text-transform: uppercase;
     margin-top: 20px;
 }
+
+.h1 {
+    font-size: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 90%;
+        height: 30rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .overlay {
+        width: 95%;
+        height: 30rem;
+        align-items: center;
+        margin-left: 20px;
+        padding: 10px;
+        padding-right: 20px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .h1 {
+        font-size: 40px;
+      }
+
+      .heroContainer {
+        height: 550px;
+      }
+}

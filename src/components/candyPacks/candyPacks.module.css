@@ -44,3 +44,35 @@
     cursor: pointer;
     height: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+    
+.section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.section img {
+    width: 320px;
+    height: 300px;
+}
+
+.text {
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;    
+}
+
+.text h2 {
+    font-size: 40px;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+}

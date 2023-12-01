@@ -1,0 +1,56 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #3D4143;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.control button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name {
+    padding-bottom: 20px;
+}
+
+.name span, .span {
+    color: #E35701;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.line {
+    border-top: 1px solid #3D4143;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.total {
+    padding-bottom: 20px;
+}
+
+.cart {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .control {
+        gap: 20px;
+    }
+}

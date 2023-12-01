@@ -63,14 +63,25 @@
       left: 0;
       width: 100%;
       background-color: #333;
+      z-index: 1;
     }
   
     .menu.mobile {
-      display: flex;
+      display: none;
     }
   
     .hamburger {
-      display: flex;
+      display: none;
+    }
+
+    .navbar {
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 120px;
+    }
+
+    .logo {
+      gap: 10px;
     }
   }
   

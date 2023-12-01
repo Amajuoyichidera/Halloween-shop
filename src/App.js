@@ -88,8 +88,8 @@ function App() {
   return (
     <div id='home' className="App">
       <Navbar />
-      <Hero item={item1} fontSize="100px" />
-      <div id='product' className={style.product}>
+      <Hero item={item1} />
+      <div id='product' className={style.productSection}>
         <Header small='MOST DELICIOUS' big='Candies & Cookies' />
         <div className={style.container}>
         {CookieData.map((product) => (
@@ -122,7 +122,7 @@ function App() {
       </div>
 
       <div style={{ paddingTop: '50px'}}>
-       <Hero item={item2} fontSize="60px" />
+       <Hero item={item2} />
       </div>
 
       <div className={style.product}>

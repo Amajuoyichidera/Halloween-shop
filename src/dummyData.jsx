@@ -35,21 +35,21 @@ export const CookieData = [
 
 export const DecorationData = [
     {
-        'id': 1,
+        'id': 4,
         'img': candle,
         'name': 'Candle Support',
         'price': '65.00',
     },
 
     {
-        'id': 2,
+        'id': 5,
         'img': ceramic,
         'name': 'Ceramic Pumpkin',
         'price': '59.00',
     },
 
     {
-        'id': 3,
+        'id': 6,
         'img': paper,
         'name': 'Paper Pumpkin',
         'price': '17.00',
@@ -59,21 +59,21 @@ export const DecorationData = [
 
 export const CostumeData = [
     {
-        'id': 1,
+        'id': 7,
         'img': cost1,
         'name': 'Halloween Dress',
         'price': '195.00',
     },
 
     {
-        'id': 2,
+        'id': 8,
         'img': cost2,
         'name': 'Women Costume',
         'price': '99.00',
     },
 
     {
-        'id': 3,
+        'id': 9,
         'img': cost3,
         'name': 'Women Suit',
         'price': '200.00',

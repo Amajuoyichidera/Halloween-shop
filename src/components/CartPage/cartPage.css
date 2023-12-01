@@ -8,6 +8,7 @@
     background-color: #181818;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
+    overflow-x: scroll;
   }
   
   .cartPage.open {
@@ -36,4 +37,26 @@
   .cartButton:active {
     background-color: #c34b00;
     transition:  0.3s ease;
+}
+
+.clear {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #E35701;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15px;
+  width: 10rem;
+  height: 3rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .cartButton {
+    right: 30px;
+  }
 }

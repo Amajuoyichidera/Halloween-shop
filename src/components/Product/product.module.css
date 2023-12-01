@@ -6,7 +6,7 @@
     padding-bottom: 50px;
 }
 
-.product {
+.productSection {
     background-image: url('../../images/itemBg.jpg');
     background-size: cover;
     margin-top: 30px;
@@ -68,4 +68,35 @@
     margin: 0 auto;
     margin-top: 30px;
     padding-bottom: 70px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .productSection {
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .img {
+        width: 320px;
+        height: 300px;
+        border-radius: 5px;
+   }
+
+   .pick {
+    justify-content: center;
+   }
+
+   .bigLine {
+    width: 20rem;
+    padding-bottom: 40px;
+}
 }
