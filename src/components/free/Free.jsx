@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 const MyFree = ({ item }) => {
     return (
-        <div className={style.myfree}>
+        <div  data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={style.myfree}>
             {item.icon}
             <h2>{item.name}</h2>
             <p dangerouslySetInnerHTML={{ __html: item.body }}></p>
@@ -44,7 +44,7 @@ const Free = () => {
     }
 
   return (
-    <div  data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={style.free}>
+    <div className={style.free}>
         <MyFree item={item1} />
         <MyFree item={item2} />
         <MyFree item={item3} />

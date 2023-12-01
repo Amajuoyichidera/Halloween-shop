@@ -15,11 +15,13 @@ const CartPage = ({
   isCartOpen,
   toggleCart, }) => {
 
+    const cartItemCount = cartItems.reduce((count, item) => count + item.quantity, 0);
+
   return (
     <div className={`cartPage ${isCartOpen ? 'open' : ''}`}>
      <div className="cartSidebar">
         <button className="cartButton" onClick={toggleCart}>
-          <AiOutlineShoppingCart /> Cart
+          <AiOutlineShoppingCart /> Cart {cartItemCount > 0 && <span className="itemCount">{cartItemCount}</span>}
         </button>
         {cartItems.length === 0 ? (
           <h2>Cart is empty</h2>

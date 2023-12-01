@@ -53,6 +53,14 @@
   height: 3rem;
 }
 
+.itemCount {
+  background-color: white;
+  color: #E35701;
+  border-radius: 50%; /* Make it a circle */
+  padding: 0.2rem 0.5rem; /* Adjust padding as needed */
+  margin-left: 0.3rem;
+}
+
 
 
 @media screen and (max-width: 768px) {
